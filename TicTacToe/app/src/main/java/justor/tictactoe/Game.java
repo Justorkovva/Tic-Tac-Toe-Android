@@ -13,11 +13,50 @@ public class Game extends AppCompatActivity {
     private boolean done=false;
     private TextView text;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
     }
+    public void new_game_click(View v)
+    {done=false;
+        TextView text=(TextView) findViewById(R.id.textView);
+        if(x) {
+            text.setText("X starts");
+        }
+        else
+        {
+            text.setText("O starts");
+        }
+        Button b1=(Button) findViewById(R.id.button1);
+    b1.setText(".");
+    b1.setTextColor(getResources().getColor(R.color.buttonBackground));
+        Button b2=(Button) findViewById(R.id.button2);
+        b2.setText(".");
+        b2.setTextColor(getResources().getColor(R.color.buttonBackground));
+        Button b3=(Button) findViewById(R.id.button3);
+        b3.setText(".");
+        b3.setTextColor(getResources().getColor(R.color.buttonBackground));
+        Button b4=(Button) findViewById(R.id.button4);
+        b4.setText(".");
+        b4.setTextColor(getResources().getColor(R.color.buttonBackground));
+        Button b5=(Button) findViewById(R.id.button5);
+        b5.setText(".");
+        b5.setTextColor(getResources().getColor(R.color.buttonBackground));
+        Button b6=(Button) findViewById(R.id.button6);
+        b6.setText(".");
+        b6.setTextColor(getResources().getColor(R.color.buttonBackground));
+        Button b7=(Button) findViewById(R.id.button7);
+        b7.setText(".");
+        b7.setTextColor(getResources().getColor(R.color.buttonBackground));
+        Button b8=(Button) findViewById(R.id.button8);
+        b8.setText(".");
+        b8.setTextColor(getResources().getColor(R.color.buttonBackground));
+        Button b9=(Button) findViewById(R.id.button9);
+        b9.setText(".");
+        b9.setTextColor(getResources().getColor(R.color.buttonBackground));
+        }
     public void button_click(View v) {
 
         TextView text=(TextView) findViewById(R.id.textView);
